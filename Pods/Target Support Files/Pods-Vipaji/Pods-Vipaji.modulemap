@@ -1,0 +1,6 @@
+framework module Pods_Vipaji {
+  umbrella header "Pods-Vipaji-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 
 class SignInViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet weak var ImageIcon: UIImageView!
     @IBOutlet weak var FieldEmail: UITextField!
     @IBOutlet weak var FieldPassword: UITextField!
     @IBOutlet weak var SwitchShowPassword: UISwitch!
@@ -32,6 +33,12 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.view.addGradientBackground()
+        
+        ImageIcon.layer.cornerRadius = ImageIcon.frame.width / 2
+        ImageIcon.clipsToBounds = true
+        SwitchShowPassword.scale(x: 0.75, y: 0.75)
+        
+        ButtonSignIn.layer.cornerRadius = 22
     }
 
     override func didReceiveMemoryWarning() {

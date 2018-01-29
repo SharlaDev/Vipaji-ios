@@ -41,11 +41,11 @@ class UserManager {
                 let userInfo = UserProfile()
                 
                 userInfo.uid = userID
-                userInfo.name = info["name"] as! String
-                userInfo.bio = info["bio"] as! String
-                userInfo.fanCount = info["fanCount"] as! Int
-                userInfo.postCount = info["postCount"] as! Int
-                if let url = info["photoDataURL"] as? String {
+                userInfo.name = info!["name"] as! String
+                userInfo.bio = info!["bio"] as! String
+                userInfo.fanCount = info!["fanCount"] as! Int
+                userInfo.postCount = info!["postCount"] as! Int
+                if let url = info!["photoDataURL"] as? String {
                     userInfo.photoDataURL = URL(string: url)!
                 }
                 
@@ -106,7 +106,7 @@ class UserManager {
                 print(err.debugDescription)
                 result(nil)
             } else {
-                if let photoURL = snapshot?.data()["photoDataURL"] as! String? {
+                if let photoURL = snapshot?.data()!["photoDataURL"] as! String? {
                     let url = URL(string: photoURL)
                     result(url)
                 } else {
@@ -135,7 +135,7 @@ class UserManager {
                 return nil
             }
             
-            if var fanCount = doc.data()["fanCount"] as? Int {
+            if var fanCount = doc.data()!["fanCount"] as? Int {
                 fanCount += 1
                 transaction.updateData(["fanCount" : fanCount], forDocument: userRef)
                 return fanCount
@@ -166,7 +166,7 @@ class UserManager {
                 return nil
             }
             
-            if var fanCount = doc.data()["fanCount"] as? Int {
+            if var fanCount = doc.data()!["fanCount"] as? Int {
                 fanCount -= 1
                 transaction.updateData(["fanCount" : fanCount], forDocument: userRef)
                 return fanCount
@@ -226,7 +226,7 @@ class UserManager {
                 finished(0) //fail gracefully
             } else {
                 if snapshot!.exists {
-                    finished(snapshot?.data()["votes"] as! Int)
+                    finished(snapshot?.data()!["votes"] as! Int)
                 } else {
                     finished(0)
                 }
@@ -346,7 +346,7 @@ class UserManager {
                 
                 let data = snapshot!.data()
                 for i in 1..<51 {
-                    if let userID = data["\(i)"] as? String {
+                    if let userID = data!["\(i)"] as? String {
                         userIDs.append(userID)
                     }
                 }
@@ -387,7 +387,7 @@ class UserManager {
             if err != nil {
                 print(err.debugDescription)
             } else {
-                let name = snapshot?.data()["name"] as! String
+                let name = snapshot?.data()!["name"] as! String
                 finished(name)
             }
         }

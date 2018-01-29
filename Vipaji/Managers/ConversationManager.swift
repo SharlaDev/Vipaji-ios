@@ -21,7 +21,7 @@ public class ConversationManager {
                 finished([])
             }
             if snapshot!.exists {
-                if let convIDs = snapshot?.data()["conversations"] as! [String]? {
+                if let convIDs = snapshot?.data()!["conversations"] as! [String]? {
                     finished(convIDs)
                 } else {
                     finished([])
@@ -86,13 +86,13 @@ public class ConversationManager {
         
         if isNewConversation {
             defaultStore.collection("users").document(message.senderID).getDocument { (snapshot, _) in
-                var convIDs = snapshot?.data()["conversationsWith"] as! [String]
+                var convIDs = snapshot?.data()!["conversationsWith"] as! [String]
                 convIDs.append(message.recipientID)
                 defaultStore.collection("users").document(message.senderID).updateData(["conversationsWith" : (convIDs as [NSString])])
             }
             
             defaultStore.collection("users").document(message.recipientID).getDocument { (snapshot, _) in
-                var convIDs = snapshot?.data()["conversationsWith"] as! [String]
+                var convIDs = snapshot?.data()!["conversationsWith"] as! [String]
                 convIDs.append(message.senderID)
                 defaultStore.collection("users").document(message.recipientID).updateData(["conversationsWith" : (convIDs as [NSString])])
             }
@@ -141,7 +141,7 @@ public class ConversationManager {
             if err != nil {
                 print("error: \(err.debugDescription)")
             } else {
-                if let conversationIDs = snapshot?.data()["conversations"] as? [String] {
+                if let conversationIDs = snapshot?.data()!["conversations"] as? [String] {
                     //if conversationIDs.contains(")
                 } else {
                     finished([])

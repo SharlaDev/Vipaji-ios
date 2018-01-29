@@ -50,7 +50,7 @@ public class PostManager {
                 print(err.debugDescription)
                 finished([])
             } else {
-                let postIDs = snapshot?.data()["posts"] as? [String] ?? [String]()
+                let postIDs = snapshot?.data()!["posts"] as? [String] ?? [String]()
                 
                 var posts = [Post]()
                 for postID in postIDs {
@@ -163,7 +163,7 @@ public class PostManager {
                 return nil
             }
             
-            if var voteCount = doc.data()["votes"] as! Int? {
+            if var voteCount = doc.data()!["votes"] as! Int? {
                 voteCount += 1
                 transaction.updateData(["votes" : voteCount], forDocument: postRef)
                 return voteCount
@@ -350,7 +350,7 @@ public class PostManager {
                         if err != nil {
                             print(err.debugDescription)
                         } else {
-                            var postIDs = snapshot!.data()["posts"] as? [String] ?? [String]()
+                            var postIDs = snapshot!.data()!["posts"] as? [String] ?? [String]()
                             postIDs.append(doc.documentID)
                             
                             defaultStore.collection("users").document(user.uid).updateData(["posts" : postIDs])
@@ -389,7 +389,7 @@ public class PostManager {
                 return nil
             }
             
-            if var commentCount = doc.data()["commentCount"] as! Int? {
+            if var commentCount = doc.data()!["commentCount"] as! Int? {
                 commentCount += 1
                 transaction.updateData(["commentCount" : commentCount], forDocument: postRef)
                 return commentCount
@@ -536,14 +536,14 @@ public class PostManager {
         let post = Post()
         
         post.ID = snapshot.documentID
-        post.userID = (postInfo["user"] as? String)!
-        post.userName = (postInfo["userName"] as? String)!
-        post.postDate = (postInfo["date"] as? String)?.toDate(withFormat: "yyyy/MM/dd hh:mm:ss")
-        post.description = (postInfo["description"] as! String)
-        post.url = URL(string: (postInfo["videoURL"] as! String))
-        post.commentCount = postInfo["commentCount"] as! Int
-        post.shareCount = postInfo["shareCount"] as! Int
-        post.votes = postInfo["votes"] as! Int
+        post.userID = (postInfo!["user"] as? String)!
+        post.userName = (postInfo!["userName"] as? String)!
+        post.postDate = (postInfo!["date"] as? String)?.toDate(withFormat: "yyyy/MM/dd hh:mm:ss")
+        post.description = (postInfo!["description"] as! String)
+        post.url = URL(string: (postInfo!["videoURL"] as! String))
+        post.commentCount = postInfo!["commentCount"] as! Int
+        post.shareCount = postInfo!["shareCount"] as! Int
+        post.votes = postInfo!["votes"] as! Int
         
         return post
     }

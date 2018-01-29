@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet weak var ImageIcon: UIImageView!
     @IBOutlet weak var ViewIcon: UIView!
     @IBOutlet weak var FieldName: UITextField!
     @IBOutlet weak var FieldEmail: UITextField!
@@ -38,6 +39,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLayoutSubviews() {
         ViewIcon.layer.cornerRadius = ViewIcon.frame.width/2
+        ImageIcon.layer.cornerRadius = ImageIcon.frame.width / 2
+        ImageIcon.clipsToBounds = true
         FieldName.setBottomBorder()
         FieldEmail.setBottomBorder()
         FieldPassword.setBottomBorder()

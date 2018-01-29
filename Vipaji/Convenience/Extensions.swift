@@ -185,8 +185,8 @@ extension UIView {
     /// Add a background layer consisting of a predefined vertical blue gradient
     func addGradientBackground() {
         DispatchQueue.global(qos: .background).async {
-            let lightBlue = UIColor(red: 0.00, green: 0.45, blue: 1.00, alpha: 1.0).cgColor
-            let darkBlue = UIColor(red: 0.00, green: 0.24, blue: 0.75, alpha: 1.0).cgColor
+            let lightBlue = UIColor(red: 0.4, green: 0.57, blue: 0.94, alpha: 1.0).cgColor
+            let darkBlue = UIColor(red: 0.13, green: 0.28, blue: 0.94, alpha: 1.0).cgColor
             
             DispatchQueue.main.async {
                 let gradientLayer = CAGradientLayer()

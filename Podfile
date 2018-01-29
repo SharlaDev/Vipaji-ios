@@ -5,6 +5,7 @@ target 'Vipaji' do
   use_frameworks!
 
   # Pods for Vipaji
+pod 'SkyFloatingLabelTextField'
 pod 'Firebase/Core'
 pod 'Firebase/Auth’
 pod 'Firebase/Database'

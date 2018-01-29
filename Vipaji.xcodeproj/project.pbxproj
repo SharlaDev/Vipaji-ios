@@ -57,6 +57,7 @@
 		41F635341FFDE8D2008E1FF3 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F635331FFDE8D2008E1FF3 /* NewConversationViewController.swift */; };
 		41F9B31D1FAB6276005E7ABA /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F9B31C1FAB6276005E7ABA /* MessagesViewController.swift */; };
 		41F9B3201FACA971005E7ABA /* NewUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F9B31F1FACA971005E7ABA /* NewUploadViewController.swift */; };
+		705C522C201F1DC500871A7A /* RootTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C522B201F1DC500871A7A /* RootTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +114,7 @@
 		41F9B31E1FABCA3C005E7ABA /* play-button (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-button (1).png"; sourceTree = "<group>"; };
 		41F9B31F1FACA971005E7ABA /* NewUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUploadViewController.swift; sourceTree = "<group>"; };
 		58959A41AAC907BC761F9AD9 /* Pods-Vipaji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vipaji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vipaji/Pods-Vipaji.debug.xcconfig"; sourceTree = "<group>"; };
+		705C522B201F1DC500871A7A /* RootTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabViewController.swift; sourceTree = "<group>"; };
 		7D3B1FB7FEE8108063254CA1 /* Pods_Vipaji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vipaji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9CA54B79E8848AF0F4B5BC0 /* Pods-Vipaji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vipaji.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vipaji/Pods-Vipaji.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,6 +214,7 @@
 		41C4EFBB1F6268270032073F /* Vipaji */ = {
 			isa = PBXGroup;
 			children = (
+				705C522A201F1D9F00871A7A /* ViewControllers */,
 				410FD0E91FCE279000F084E1 /* crown.png */,
 				410FD0ED1FCE284600F084E1 /* trophy.png */,
 				41F9B31E1FABCA3C005E7ABA /* play-button (1).png */,
@@ -259,6 +262,14 @@
 				41EA95361FBD313B00F6D473 /* RankingViewController.swift */,
 			);
 			path = Ranking;
+			sourceTree = "<group>";
+		};
+		705C522A201F1D9F00871A7A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				705C522B201F1DC500871A7A /* RootTabViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		C9BA51FEA3709836AAA74C7B /* Frameworks */ = {
@@ -449,6 +460,7 @@
 				41EA95371FBD313B00F6D473 /* RankingViewController.swift in Sources */,
 				41C4EFD71F6308930032073F /* SignInViewController.swift in Sources */,
 				41C4EFF91F64937A0032073F /* ProfileAchievementsViewController.swift in Sources */,
+				705C522C201F1DC500871A7A /* RootTabViewController.swift in Sources */,
 				41C4EFBD1F6268270032073F /* AppDelegate.swift in Sources */,
 				41317E28200712750013FE68 /* CommentsTableViewController.swift in Sources */,
 				41F9B31D1FAB6276005E7ABA /* MessagesViewController.swift in Sources */,

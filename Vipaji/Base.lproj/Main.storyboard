@@ -554,7 +554,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="DiscoverFeed" id="Xc7-f5-sgJ" customClass="DiscoverViewController" customModule="Vipaji" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="550" sectionHeaderHeight="40" sectionFooterHeight="64" id="QJY-FQ-dao">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <prototypes>
@@ -675,7 +675,7 @@
         <!--Upload-->
         <scene sceneID="f5s-wI-aiR">
             <objects>
-                <navigationController id="Sdc-Ba-00a" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="UploadRootViewController" id="Sdc-Ba-00a" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Upload" image="Camera" id="q93-K3-7pa"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nKC-yY-tZV">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -694,7 +694,7 @@
             <objects>
                 <viewController title="Select Video" id="g7V-TR-qPT" customClass="SelectVideoViewController" customModule="Vipaji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wr1-HW-8Cu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HiH-SP-hPl">
@@ -726,13 +726,13 @@
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69Y-KB-QbK">
-                                <rect key="frame" x="0.0" y="618" width="375" height="0.0"/>
+                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
                                 <connections>
                                     <segue destination="SlC-Vv-G8x" kind="embed" id="YgJ-Oj-UKr"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3A8-B4-DhA">
-                                <rect key="frame" x="0.0" y="558" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
                                 <color key="backgroundColor" red="0.10411297541865004" green="0.33328018446155316" blue="0.76710249352331605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="nGh-zn-h4A"/>
@@ -781,18 +781,18 @@
             <objects>
                 <viewController storyboardIdentifier="UploadPost" title="Upload Post" automaticallyAdjustsScrollViewInsets="NO" id="HeT-nn-5yS" customClass="NewUploadViewController" customModule="Vipaji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nX5-dU-zmX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Write a short description of your awesome talent..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qg4-Ji-1L8">
-                                <rect key="frame" x="16" y="396.5" width="343" height="153.5"/>
+                                <rect key="frame" x="16" y="396.5" width="343" height="202.5"/>
                                 <color key="backgroundColor" red="0.73915371192893398" green="0.73915371192893398" blue="0.73915371192893398" alpha="0.12275256849315068" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MH-Pq-6tL">
-                                <rect key="frame" x="0.0" y="558" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
                                 <color key="backgroundColor" red="0.10540004819631577" green="0.33153495192527771" blue="0.76865118741989136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="ybD-9B-TwV"/>
@@ -887,11 +887,11 @@
             <objects>
                 <viewController id="KB3-MU-6we" customClass="DiscoverTabViewController" customModule="Vipaji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="904-vO-r2k">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDr-g9-IMZ">
-                                <rect key="frame" x="0.0" y="152" width="375" height="466"/>
+                                <rect key="frame" x="0.0" y="152" width="375" height="515"/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETv-ne-QxD">
                                 <rect key="frame" x="0.0" y="64" width="375" height="88"/>
@@ -978,7 +978,7 @@
         <!--Rankings-->
         <scene sceneID="oH1-IN-93H">
             <objects>
-                <navigationController id="bbH-Ex-YkG" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RankingRootViewController" id="bbH-Ex-YkG" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Rankings" image="Star" id="yc1-FU-bNa"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2EC-LL-Xs0">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1002,7 +1002,7 @@
             <objects>
                 <viewController id="hK5-tO-mjJ" customClass="RankingViewController" customModule="Vipaji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c0j-Ey-15x">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EC4-aw-vN4">
@@ -1128,7 +1128,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFJ-bK-Fk3">
-                                <rect key="frame" x="0.0" y="256.5" width="375" height="361.5"/>
+                                <rect key="frame" x="0.0" y="256.5" width="375" height="410.5"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1161,10 +1161,123 @@
             </objects>
             <point key="canvasLocation" x="1680.8" y="-725.48725637181417"/>
         </scene>
+        <!--Root Tab View Controller-->
+        <scene sceneID="R0v-MJ-mgl">
+            <objects>
+                <viewController storyboardIdentifier="TabController" id="eeT-t4-Gu2" customClass="RootTabViewController" customModule="Vipaji" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vrd-tu-Tzn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2h-sz-2ew" userLabel="Container">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TW1-RR-DqT" userLabel="Tab View">
+                                <rect key="frame" x="-0.5" y="587" width="375" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ER6-O4-A7x">
+                                        <rect key="frame" x="16" y="3" width="343" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmy-WR-PGV" userLabel="Home">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                <color key="backgroundColor" red="0.0" green="0.41119432449999999" blue="0.85185390709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Xmy-WR-PGV" secondAttribute="height" multiplier="1:1" id="lNU-kB-AkK"/>
+                                                </constraints>
+                                                <state key="normal" image="Home"/>
+                                                <connections>
+                                                    <action selector="didPressTabs:" destination="eeT-t4-Gu2" eventType="touchUpInside" id="IGJ-LD-XlQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2B-3K-Ehp" userLabel="Search">
+                                                <rect key="frame" x="64" y="0.0" width="44" height="44"/>
+                                                <color key="backgroundColor" red="0.0" green="0.41119432449999999" blue="0.85185390709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Z2B-3K-Ehp" secondAttribute="height" multiplier="1:1" id="MWs-ma-3Xb"/>
+                                                </constraints>
+                                                <state key="normal" image="Globe"/>
+                                                <connections>
+                                                    <action selector="didPressTabs:" destination="eeT-t4-Gu2" eventType="touchUpInside" id="eNO-ZU-II8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1y-Ed-wdj" userLabel="Upload">
+                                                <rect key="frame" x="127.5" y="0.0" width="88" height="44"/>
+                                                <color key="backgroundColor" red="0.0" green="0.41119432449999999" blue="0.85185390709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="t1y-Ed-wdj" secondAttribute="height" multiplier="2:1" id="RbA-HE-FGb"/>
+                                                </constraints>
+                                                <state key="normal" image="Camera"/>
+                                                <connections>
+                                                    <action selector="didPressTabs:" destination="eeT-t4-Gu2" eventType="touchUpInside" id="1dI-VY-s8T"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ue1-zk-3Py" userLabel="Notification">
+                                                <rect key="frame" x="235.5" y="0.0" width="44" height="44"/>
+                                                <color key="backgroundColor" red="0.0" green="0.41119432449999999" blue="0.85185390709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Ue1-zk-3Py" secondAttribute="height" multiplier="1:1" id="OfM-73-Tmu"/>
+                                                </constraints>
+                                                <state key="normal" image="Star"/>
+                                                <connections>
+                                                    <action selector="didPressTabs:" destination="eeT-t4-Gu2" eventType="touchUpInside" id="bWC-S0-a6E"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vj9-yW-y6y" userLabel="Profile">
+                                                <rect key="frame" x="299" y="0.0" width="44" height="44"/>
+                                                <color key="backgroundColor" red="0.0" green="0.41119432449999999" blue="0.85185390709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Vj9-yW-y6y" secondAttribute="height" multiplier="1:1" id="ZBd-lx-sY6"/>
+                                                </constraints>
+                                                <state key="normal" image="Profile"/>
+                                                <connections>
+                                                    <action selector="didPressTabs:" destination="eeT-t4-Gu2" eventType="touchUpInside" id="fkz-mv-HD3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="wkM-Kg-fdb"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ER6-O4-A7x" firstAttribute="centerX" secondItem="TW1-RR-DqT" secondAttribute="centerX" id="0E0-xS-CPs"/>
+                                    <constraint firstItem="ER6-O4-A7x" firstAttribute="centerY" secondItem="TW1-RR-DqT" secondAttribute="centerY" id="AW8-cy-1PK"/>
+                                    <constraint firstItem="ER6-O4-A7x" firstAttribute="leading" secondItem="TW1-RR-DqT" secondAttribute="leading" constant="16" id="FjL-He-O5S"/>
+                                    <constraint firstAttribute="height" constant="50" id="Np9-g5-M97"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aLA-Pl-aAf" firstAttribute="bottom" secondItem="TW1-RR-DqT" secondAttribute="bottom" constant="30" id="868-U9-cPU"/>
+                            <constraint firstItem="u2h-sz-2ew" firstAttribute="leading" secondItem="aLA-Pl-aAf" secondAttribute="leading" id="E9w-cK-7q3"/>
+                            <constraint firstItem="aLA-Pl-aAf" firstAttribute="bottom" secondItem="u2h-sz-2ew" secondAttribute="bottom" id="IDD-lc-k9p"/>
+                            <constraint firstItem="aLA-Pl-aAf" firstAttribute="trailing" secondItem="u2h-sz-2ew" secondAttribute="trailing" id="Th3-RO-O0n"/>
+                            <constraint firstItem="TW1-RR-DqT" firstAttribute="width" secondItem="Vrd-tu-Tzn" secondAttribute="width" id="Tzd-e0-2v1"/>
+                            <constraint firstItem="u2h-sz-2ew" firstAttribute="top" secondItem="aLA-Pl-aAf" secondAttribute="top" constant="-20" id="oEd-On-x4p"/>
+                            <constraint firstItem="TW1-RR-DqT" firstAttribute="centerX" secondItem="aLA-Pl-aAf" secondAttribute="centerX" id="rbd-jo-2th"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aLA-Pl-aAf"/>
+                    </view>
+                    <connections>
+                        <outlet property="ViewContainer" destination="u2h-sz-2ew" id="lMg-GE-Fv7"/>
+                        <outletCollection property="TabButtons" destination="Z2B-3K-Ehp" collectionClass="NSMutableArray" id="eEc-Ba-g3q"/>
+                        <outletCollection property="TabButtons" destination="t1y-Ed-wdj" collectionClass="NSMutableArray" id="deT-N3-WTj"/>
+                        <outletCollection property="TabButtons" destination="Ue1-zk-3Py" collectionClass="NSMutableArray" id="HUA-Nr-1Yb"/>
+                        <outletCollection property="TabButtons" destination="Vj9-yW-y6y" collectionClass="NSMutableArray" id="rlh-XY-Hnp"/>
+                        <outletCollection property="TabButtons" destination="Xmy-WR-PGV" collectionClass="NSMutableArray" id="CGo-eZ-CJN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sIu-hL-5uW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-328" y="897"/>
+        </scene>
         <!--Discover-->
         <scene sceneID="v2E-89-BKq">
             <objects>
-                <navigationController id="lcl-lr-fFQ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SearchRootViewController" id="lcl-lr-fFQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Discover" image="Globe" id="7IR-qp-eIp"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7zk-Fs-LET">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1181,7 +1294,7 @@
         <!--My Profile-->
         <scene sceneID="aNF-Oz-DfH">
             <objects>
-                <navigationController id="U1v-rF-F1n" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ProfileRootViewController" id="U1v-rF-F1n" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Profile" image="Profile" id="nnl-uF-ZUB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wcq-uN-PFa">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1420,7 +1533,7 @@
             <objects>
                 <viewController storyboardIdentifier="Profile" id="xJ6-DY-TmL" customClass="NewProfileViewController" customModule="Vipaji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="isc-4w-IyR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue purple gradient.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qas-qW-pVx">
@@ -1616,6 +1729,21 @@
             </objects>
             <point key="canvasLocation" x="1680.8" y="1577.3613193403301"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Pfq-5t-lBH">
+            <objects>
+                <viewController id="b81-ER-y6G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tu6-DU-0ga">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bKn-1B-qSY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2RJ-IU-hKV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1497" y="2275"/>
+        </scene>
         <!--Profile Achievements View Controller-->
         <scene sceneID="Gvh-Zs-hNr">
             <objects>
@@ -1721,7 +1849,7 @@
         <!--Home-->
         <scene sceneID="Kbo-vP-l4M">
             <objects>
-                <navigationController id="BMp-Sh-NOl" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeRootViewController" id="BMp-Sh-NOl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="Home" id="Ecf-gt-Kts"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cpd-EW-LwG">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1971,7 +2099,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="Feed" id="kh7-XT-aZy" customClass="FeedViewController" customModule="Vipaji" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="15K-yX-4Rx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <prototypes>
@@ -2182,7 +2310,7 @@
             <objects>
                 <tableViewController title="Messages" id="Lg9-02-cBn" customClass="MessagesViewController" customModule="Vipaji" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ypW-Xd-hkA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <prototypes>
@@ -2379,7 +2507,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="NewConversation" title="New Conversation" id="TIV-ts-LNe" customClass="NewConversationController" customModule="Vipaji" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="40" sectionFooterHeight="28" id="qDf-PH-gyI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="uP8-Dw-hAy">
@@ -2585,17 +2713,17 @@
             <objects>
                 <viewController storyboardIdentifier="Comments" id="Lq1-ZD-zdP" customClass="CommentsViewController" customModule="Vipaji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Jr-sO-85p">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNs-Ws-70I">
-                                <rect key="frame" x="0.0" y="64" width="375" height="502.5"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="551.5"/>
                                 <connections>
                                     <segue destination="MpI-kA-7vc" kind="embed" id="oWX-1c-crg"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWv-WB-oAV">
-                                <rect key="frame" x="0.0" y="566.5" width="375" height="51.5"/>
+                                <rect key="frame" x="0.0" y="615.5" width="375" height="51.5"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="byx-oj-6ii">
                                         <rect key="frame" x="8" y="8" width="303" height="35.5"/>
@@ -2658,7 +2786,7 @@
             <objects>
                 <tableViewController id="MpI-kA-7vc" customClass="CommentsTableViewController" customModule="Vipaji" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UKH-8R-vrh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="502.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="551.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <prototypes>
@@ -2793,27 +2921,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vIG-Y2-PGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4292" y="-1597"/>
-        </scene>
-        <!--TabController-->
-        <scene sceneID="JI2-s0-3as">
-            <objects>
-                <tabBarController storyboardIdentifier="TabController" title="TabController" id="FEZ-Ak-NnO" customClass="RootTabController" customModule="Vipaji" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="Zfp-Rt-vHR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="BMp-Sh-NOl" kind="relationship" relationship="viewControllers" id="TeQ-ch-Q5Z"/>
-                        <segue destination="lcl-lr-fFQ" kind="relationship" relationship="viewControllers" id="kFF-PX-pUW"/>
-                        <segue destination="Sdc-Ba-00a" kind="relationship" relationship="viewControllers" id="wUC-1M-Awf"/>
-                        <segue destination="bbH-Ex-YkG" kind="relationship" relationship="viewControllers" id="xGl-JM-bV4"/>
-                        <segue destination="U1v-rF-F1n" kind="relationship" relationship="viewControllers" id="oJw-qK-i93"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ln-J8-2P0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-164" y="-3"/>
         </scene>
         <!--Ranks View Controller-->
         <scene sceneID="O4O-IO-S2v">
@@ -2981,7 +3088,7 @@
         <image name="Send" width="128" height="128"/>
         <image name="Share" width="128" height="128"/>
         <image name="Sign Out" width="24" height="24"/>
-        <image name="Star" width="25" height="25"/>
+        <image name="Star" width="24" height="24"/>
         <image name="User Placeholder" width="512" height="512"/>
         <image name="Vipaji Icon" width="512" height="512"/>
         <image name="blue purple gradient.png" width="800" height="1280"/>

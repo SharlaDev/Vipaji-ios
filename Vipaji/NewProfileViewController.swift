@@ -18,6 +18,8 @@ class NewProfileViewController: UIViewController {
     @IBOutlet weak var PostCountLabel: UILabel!
     @IBOutlet weak var FanCountLabel: UILabel!
     @IBOutlet weak var RankContainerView: UIView!
+    @IBOutlet weak var TroppyButton: UIButton!
+    @IBOutlet weak var SettingsButton: UIButton!
     
     public var userID: String?
     
@@ -27,7 +29,7 @@ class NewProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // If no ID is provided, use currently logged in user.
         if userID == nil {
             userID = Auth.auth().currentUser!.uid
@@ -106,7 +108,12 @@ class NewProfileViewController: UIViewController {
         BioTextView.textContainerInset = UIEdgeInsets.zero
         BioTextView.textContainer.lineFragmentPadding = 0
     }
-
+    
+    override func viewDidLayoutSubviews() {
+        ActionButton.layer.cornerRadius = 22
+        TroppyButton.layer.cornerRadius = TroppyButton.frame.width / 2
+        SettingsButton.layer.cornerRadius = SettingsButton.frame.width / 2
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

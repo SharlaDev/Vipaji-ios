@@ -12,7 +12,7 @@ pod 'Firebase/Database'
 pod ‘Firebase/Storage’
 pod 'Firebase/Firestore'
 pod ’Shimmer’
-pod 'ComplimentaryGradientView'
+#pod 'ComplimentaryGradientView'
 pod 'XLPagerTabStrip', '~> 8.0'
 
 

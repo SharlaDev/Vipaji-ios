@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ComplimentaryGradientView
+//import ComplimentaryGradientView
 import AVFoundation
 import XLPagerTabStrip
 
